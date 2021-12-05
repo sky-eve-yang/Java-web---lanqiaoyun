@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<!-- <view class="img"></view> -->
+		<view class="img"></view>
 		<view class="text-area">
 			
 			<swiper vertical="true" style="height: 100vh;width: 100vw;">
@@ -234,12 +234,13 @@
 	}
 
 	.img{
-	      width: 50rpx;
-	      height: 50rpx;
-		  bottom: 10rpx;
-		  right: 20rpx;
+	      width: 100rpx;
+	      height: 100rpx;
+		  bottom: 20rpx;
+		  left: 20rpx;
 	      position: absolute;
 	      background-image: url('goat.gif');
+		  transform: rotateY(180deg);
 	      background-size: cover;
 	      z-index: 100;
 	      background-color: transparent;
