@@ -5,9 +5,10 @@
 			
 			<swiper vertical="true" style="height: 100vh;width: 100vw;">
 				<!-- 起始 -->
-				<swiper-item class="" style="width: 100vw;">
-					2222
-					<!-- <image :src="pagesElements.eatingPage.imgsUrl.custom"  mode="aspectFit"></image> -->
+				<swiper-item class="startPage">
+					<view style="height: 20vh;width: 100vw;;position: absolute;z-index: 2;display: flex;justify-content: center;align-items: center;">{{pagesElements.eatingPage.copywritingData.modifyingClause.lessCost}}</view>
+					<image :src="pagesElements.eatingPage.imgsUrl.cateen3" style="position: absolute;z-index: 1;width: 100vw;height: 100vh;"  mode="aspectFit"></image>
+					<image :src="pagesElements.eatingPage.imgsUrl.custom" style="position: relative;z-index: 5;width: 100vw;height: 100vh;"  mode="aspectFit"></image>
 				</swiper-item>
 				<!-- 吃饭 -->
 				<swiper-item class="" style="width: 100vw;">
@@ -73,7 +74,7 @@
 						imgsUrl: {
 							cateen1: '../../static/bill2021/eating/cateen1.png',
 							cateen2: '../../static/bill2021/eating/cateen2.png',
-							cateen3: '../../static/bill2021/eating/cateen4.png',
+							cateen3: '../../static/bill2021/eating/cateen3.png',
 							custom: '../../static/bill2021/eating/custom cat.png',
 							mush: '../../static/bill2021/eating/fat cat.png'
 						}
@@ -229,6 +230,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		
 	}
 
 	.img{
@@ -241,5 +243,9 @@
 	      background-size: cover;
 	      z-index: 100;
 	      background-color: transparent;
+	}
+	
+	.startPage {
+		
 	}
 </style>
